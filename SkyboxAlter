@@ -1,10 +1,13 @@
 return function(assetId)
     local Lighting = game.Lighting
-    local sky = Lighting.Cartoon
+    for _,sky in ipairs(Lighting:GetChildren()) do
+    if sky.ClassName=="Sky" then
     sky.SkyboxBk = "rbxassetid://"..assetId
     sky.SkyboxDn = "rbxassetid://"..assetId
     sky.SkyboxFt = "rbxassetid://"..assetId
     sky.SkyboxLf = "rbxassetid://"..assetId
     sky.SkyboxRt = "rbxassetid://"..assetId
     sky.SkyboxUp = "rbxassetid://"..assetId
+    end
+    end
 end

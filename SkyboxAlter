@@ -1,6 +1,6 @@
 return function(assetId)
-    local Lighting = game:GetService("Lighting")
-    local sky = Instance.new("Sky")
+    local Lighting = game.Lighting
+    local sky = Lighting.Cartoon
     sky.SkyboxBk = "rbxassetid://"..assetId
     sky.SkyboxDn = "rbxassetid://"..assetId
     sky.SkyboxFt = "rbxassetid://"..assetId

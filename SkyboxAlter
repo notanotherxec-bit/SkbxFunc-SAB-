@@ -1,0 +1,11 @@
+return function(assetId)
+    local Lighting = game:GetService("Lighting")
+    local sky = Instance.new("Sky")
+    sky.SkyboxBk = "rbxassetid://"..assetId
+    sky.SkyboxDn = "rbxassetid://"..assetId
+    sky.SkyboxFt = "rbxassetid://"..assetId
+    sky.SkyboxLf = "rbxassetid://"..assetId
+    sky.SkyboxRt = "rbxassetid://"..assetId
+    sky.SkyboxUp = "rbxassetid://"..assetId
+    Lighting.Sky = sky
+end

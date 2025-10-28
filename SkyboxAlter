@@ -7,5 +7,4 @@ return function(assetId)
     sky.SkyboxLf = "rbxassetid://"..assetId
     sky.SkyboxRt = "rbxassetid://"..assetId
     sky.SkyboxUp = "rbxassetid://"..assetId
-    Lighting.Sky = sky
 end
